@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Task2Activity">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.sk.cashrichtask.fragment.FragmentA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.sk.cashrichtask.fragment.FragmentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentA"
+        android:layout_marginTop="@dimen/margin_4" />
+
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.sk.cashrichtask.fragment.FragmentC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentB"
+        android:layout_marginTop="@dimen/margin_8" />
+</RelativeLayout>
